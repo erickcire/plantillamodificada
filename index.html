@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>TECNOLOGIAS</title>
+
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+
+<link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+<link href="scripts/jquery-ui-1.11.2/jquery-ui.min.css" rel="stylesheet" />
+<link href="animate.min.css" rel="stylesheet" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+<!-- Google Map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiAzq_P_zSOucySJu6_IGhcOCtxiNR06A&amp;callback=initMap"></script>
+<script>
+  function initialize() {
+    var myLatlng = new google.maps.LatLng(51.518641, -0.168163);
+    var map_options = {
+      zoom: 16,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      center: myLatlng,
+      scrollwheel: false,
+      disableDefaultUI: true
+    }
+
+    var map = new google.maps.Map(document.getElementById('map_canvas'), map_options)
+    var myIcon = new google.maps.MarkerImage('images/map_icon.png', null, null, null, new google.maps.Size(36,54));
+
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      icon: myIcon
+    });
+
+  }
+
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<!-- Google Map Ends! -->
+
+</head>
+
+<body>
+
+<div class="page">
+
+  <!-- header -->
+  <div class="header">
+
+    <div class="container">
+
+      <h1><a href="#">TECNOLOGIAS DE LA PLANTILLA</a></h1>
+
+      <br></br>
+      <p class="subtitle">ETIQUETAS HTML5<strong></strong></p>
+
+      <div class="when">
+
+        <div class="icon-holder">
+          <i class="fa fa-calendar"></i>
+        </div>
+
+        <div>
+          <p><strong>!DOCTYPE</strong></p>
+          <p><span></span>Define el tipo de documento.</p><br></br>
+        </div>
+
+      </div>
+
+      <div class="where">
+
+        <div class="icon-holder">
+          <i class="fa fa-map-marker"></i>
+        </div>
+
+        <div>
+          <p><strong>strong></p>
+          <p><span></span><a href="#">Define un salto de línea.</a></p>
+        </div>
+
+      </div>
+
+
+      <div class="where">
+
+        <div class="icon-holder">
+          <i class="fa fa-map-marker"></i>
+        </div>
+
+        <div>
+          <p><strong>caption</strong></p>
+          <p><span></span><a href="#">Define el título de una tabla.</a></p>
+        </div>
+
+      </div>
+
+
+      <div class="where">
+
+        <div class="icon-holder">
+          <i class="fa fa-map-marker"></i>
+        </div>
+
+        <div>
+          <p><strong>div</strong></p>
+          <p><span></span><a href="#">Define una sección en un documento.</a></p>
+        </div>
+
+      </div>
+
+
+      <div class="where">
+
+        <div class="icon-holder">
+          <i class="fa fa-map-marker"></i>
+        </div>
+
+        <div>
+          <p><strong>html</strong></p>
+          <p><span></span><a href="#">Define la raíz del documento.</a></p>
+
+          <br></br><br></br><br></br>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- header ends -->
+
+  <!-- topics -->
+  <div class="topics">
+    <div class="container">
+
+      <h3><strong>CSS3</strong></h3>
+
+      <!-- single topic -->
+      <div>
+        <i class="fa fa-code fa-2x"></i>
+        <h4>Border radius </h4>
+        <p>Permite crear cajas con bordes redondeados fácilmente.</p>
+      </div>
+      <!-- single topic ends! -->
+
+      <!-- single topic -->
+      <div>
+        <i class="fa fa-line-chart fa-2x"></i>
+        <h4>Box Shadow </h4>
+        <p>Ofrece la posibilidad de añadir una sombra a nuestra caja.</p>
+      </div>
+      <!-- single topic ends! -->
+
+      <!-- single topic -->
+      <div>
+        <i class="fa fa-lightbulb-o fa-2x"></i>
+        <h4>Text shadow</h4>
+        <p>Ofrece la posibilidad de añadir una sombra al texto. </p>
+      </div>
+
+            <div>
+        <i class="fa fa-code fa-2x"></i>
+        <h4>Multiple background</h4>
+        <p>Permite agregar varios fondos de forma simultánea.</p>
+      </div>
+
+            <div>
+        <i class="fa fa-code fa-2x"></i>
+        <h4>Background size</h4>
+        <p>Permite variar el tamaño del background.</p>
+      </div>
+      <!-- single topic ends! -->
+
+    </div>
+  </div>
+  <!-- topics ends! -->
+
+        <div class="bullets">
+
+          <h3>JAVASCRIPT</h3>
+
+          <div>
+            <h4><i class="fa fa-check"></i> Frameworks</h4>
+            <p>Es un framework por el lado del servidor que permite a los desarrolladores crear aplicaciones web con Node.js.</p>
+          </div>
+
+          <div>
+            <h4><i class="fa fa-check"></i> Librerías JS</h4>
+            <p>Esta es la librería JavaScript más utilizada por los desarrolladores. Permite, de una forma sencilla, interactuar con el HTML, el DOM, hacer todo tipo de animaciones, introducir funcionalidades AJAX al proyecto.</p>
+          </div>
+
+          <div>
+            <h4><i class="fa fa-check"></i> List.js</h4>
+            <p>List.js es un Javascript ideal para el manejo de tablas y listas. Con él puedes ejecutar búsquedas, ordenar o filtrar de datos de manera rápida y sencilla.</p>
+          </div>
+
+          <div>
+            <h4><i class="fa fa-check"></i> React</h4>
+            <p>Es una biblioteca de Javascript muy útil y gratuita planteada del clienre, que te permite el desarrollo de interficies de usuario.</p>
+          </div>
+
+          <div>
+            <h4><i class="fa fa-check"></i> Chart.js</h4>
+            <p>Es una libreria sin dependencias que permite construir graficos de 6 tipos distintos: graficos lineales, graficos de barras, graficos radiales, graficos circulares y graficos de sectores.</p>
+          </div>
+
+        </div>
+
+    </div>
+  </div>
+  <!-- why ends! -->
+
+  <a id="registration" class="anchor"></a>
+
+<!-- contact form overlay popup ends! -->
+
+<!-- scripts -->
+<script src="scripts/jquery-1.11.0.min.js"></script>
+<script src="scripts/jquery-ui-1.11.2/jquery-ui.min.js"></script>
+<script src="scripts/flexslider/jquery.flexslider-min.js"></script>
+<script src="scripts/jquery.parallax-1.1.3.js"></script>
+<script src="scripts/jquery.inview.min.js"></script>
+<script src="scripts/form.js"></script>
+<script src="scripts/theme.js"></script>
+<!-- scripts ends! -->
+
+</body>
+</html>
